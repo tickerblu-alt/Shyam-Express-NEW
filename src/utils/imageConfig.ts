@@ -156,7 +156,7 @@ export const IMAGES = {
 
   // Slide 9: Next Steps - Closing Visionary Concept
   slide9NextSteps: getUrl(
-    "https://i.postimg.cc/K8sv9wqf/svf-fight-03-dodge.webp", 
+    "https://i.postimg.cc/cLj07YCC/nerf-05-final-render.webp", 
     baseAssets.khatuShyamHero
   ),
 
