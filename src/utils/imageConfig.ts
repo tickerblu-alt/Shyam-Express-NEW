@@ -96,7 +96,7 @@ export const IMAGES = {
 
   // Slide 3: Look & Feel - World A Realist Concept Plate (Gritty India)
   slide3WorldA: getUrl(
-    "https://i.postimg.cc/W16fTqqn/khatu-shyam-prof.jpg", 
+    "https://i.postimg.cc/mgZtpQTp/khatu-diffrent-versions.webp", 
     baseAssets.profShyam
   ),
 
