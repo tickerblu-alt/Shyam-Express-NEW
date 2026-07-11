@@ -114,7 +114,7 @@ export const IMAGES = {
 
   // Slide 5: All Star Cast Portrait 1 (Sumedh Mudgalkar)
   slide5Cast1: getUrl(
-    "https://i.postimg.cc/MKqk15Dw/sumedh.jpg", 
+    "https://i.postimg.cc/mgZtpQTp/khatu-diffrent-versions.webp", 
     baseAssets.sumedhMudgalkar
   ),
 
