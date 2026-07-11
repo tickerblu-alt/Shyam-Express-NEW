@@ -72,7 +72,7 @@ export default function App() {
 
   // Secure Audio Player and Synthesizer States
   const [audioState, setAudioState] = useState<"off" | "synth" | "song1" | "song2">("off");
-  const [volume, setVolume] = useState<number>(0.5);
+  const [volume, setVolume] = useState<number>(0.27);
   const [isPlaying, setIsPlaying] = useState<boolean>(false);
   const [song1Name, setSong1Name] = useState<string | null>("Film Track 1 (Vocal Theme)");
   const [song2Name, setSong2Name] = useState<string | null>("Film Track 2 (Background Score)");
@@ -576,7 +576,7 @@ export default function App() {
               } else {
                 setAudioState("song1");
                 setIsPlaying(true);
-                setVolume(0.15);
+                setVolume(0.27);
               }
             }}
             className={`px-3 py-1.5 rounded-full text-[10px] uppercase font-bold tracking-wider transition-all flex items-center gap-1.5 cursor-pointer ${
@@ -591,7 +591,7 @@ export default function App() {
                 <Volume2 className="w-3.5 h-3.5 text-[#FFD978] animate-pulse" />
                 <span className="flex items-center gap-1">
                   <span>Music ON</span>
-                  <span className="text-[8px] opacity-75 font-mono">(Vol: 15%)</span>
+                  <span className="text-[8px] opacity-75 font-mono">(Vol: {Math.round(volume * 100)}%)</span>
                 </span>
               </>
             ) : (
@@ -775,7 +775,7 @@ export default function App() {
                   setShowStartPopup(false);
                   setIsPlaying(true);
                   setAudioState("song1");
-                  setVolume(0.15); // minimized soulful level during opening
+                  setVolume(0.27); // minimized soulful level during opening
                 }}
                 className="mt-8 w-full h-[54px] rounded-full font-bold tracking-[0.16em] uppercase text-[12.5px] shadow-[0_8px_24px_rgba(184,134,11,0.25)] hover:shadow-[0_12px_32px_rgba(184,134,11,0.4)] hover:scale-[1.01] active:scale-[0.99] transition duration-300 flex items-center justify-center gap-2.5 cursor-pointer"
                 style={{ background: `linear-gradient(90deg, ${x.gold}, ${x.goldLight})`, color: "#1A1A1A" }}

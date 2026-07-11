@@ -625,7 +625,7 @@ export function LookFeelSlide({ images, onUploadImage, onResetImage }: SlideProp
           How the format of the film looks like
         </h1>
         
-        <div className="mt-6 grid md:grid-cols-2 gap-6 flex-1 items-stretch max-h-full">
+        <div className="mt-6 grid md:grid-cols-2 gap-6 md:flex-1 items-stretch md:max-h-full">
           {/* World A */}
           <div className="relative p-6 md:p-8 rounded-2xl bg-[#EDE6D6] border border-black/10 overflow-hidden flex flex-col justify-between min-h-[340px] shadow-sm">
             <div
@@ -761,7 +761,7 @@ export function ProfShyamSlide({ images, onUploadImage, onResetImage }: SlidePro
           look & feel of the HERO
         </h1>
         
-        <div className="mt-6 grid md:grid-cols-[420px_1fr] gap-8 items-center flex-1 max-h-full">
+        <div className="mt-6 grid md:grid-cols-[420px_1fr] gap-8 items-center md:flex-1 md:max-h-full">
           {/* Left Column: Visual Sheet */}
           <div className="relative mx-auto w-full max-w-[380px] md:max-w-full">
             <SlideImageZone
