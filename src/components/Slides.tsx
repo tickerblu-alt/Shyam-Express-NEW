@@ -224,8 +224,7 @@ export function TitleSlide({
         {/* Top Header - Branding */}
         <div className="flex flex-col sm:flex-row sm:items-center justify-between w-full border-b border-white/10 pb-4 gap-3">
           <div className="flex flex-col items-start">
-            <SectionBadge>PROZENIUS Presents</SectionBadge>
-            <div className="mt-1.5 flex items-center gap-2">
+            <div className="flex items-center gap-2">
               <span className="w-2 h-2 rounded-full bg-[#FFD978] animate-pulse shrink-0" />
               <h1 className="text-[14px] sm:text-[17px] tracking-[0.24em] text-transparent bg-clip-text bg-gradient-to-r from-[#B8860B] via-[#FFD978] to-[#B8860B] uppercase font-serif font-extrabold drop-shadow-[0_2px_4px_rgba(0,0,0,0.8)]">
                 A FILM CREATED BY HEMANT NILIM DAS
@@ -242,13 +241,6 @@ export function TitleSlide({
           
           {/* Left Column: Breathtaking Interactive Poster Card */}
           <div className="lg:col-span-5 flex flex-col items-center">
-            {/* Elegant Creator Credit in Golden letters above the poster/production header */}
-            <div className="w-full max-w-[380px] sm:max-w-[420px] text-left mb-2 px-1">
-              <span className="text-[12px] sm:text-[14px] tracking-[0.24em] text-transparent bg-clip-text bg-gradient-to-r from-[#B8860B] via-[#FFD978] to-[#B8860B] uppercase font-serif font-bold drop-shadow-[0_1px_2px_rgba(0,0,0,0.6)]">
-                A film Created By HEMANT NILIM DAS
-              </span>
-            </div>
-
             {/* Produced/Presented Header above poster */}
             <div className="mb-4 text-center max-w-[380px] sm:max-w-[420px] w-full bg-black/40 border border-[#B8860B]/20 rounded-xl p-3 shadow-inner">
               <div className="text-[12.5px] tracking-[0.2em] text-[#FFD978] font-bold uppercase">
@@ -257,10 +249,11 @@ export function TitleSlide({
               <div className="text-[10.5px] text-white/80 tracking-wide mt-1.5 font-medium leading-snug">
                 Produced by <span className="text-white font-semibold">Ravinder Kumar</span> • Executive Producer <span className="text-white font-semibold">Bijendra Tusamad</span>
               </div>
-            </div>            <div 
-              className="relative group/poster w-full max-w-[380px] sm:max-w-[420px] aspect-[3/4] flex flex-col justify-between rounded-[24px] overflow-hidden border transition-transform duration-500 hover:scale-[1.01] shadow-[0_0_50px_rgba(184,134,11,0.25)]"
+            </div>
+
+            <div 
+              className="relative group/poster w-full max-w-[380px] sm:max-w-[420px] aspect-[3/4] rounded-[24px] overflow-hidden border transition-transform duration-500 hover:scale-[1.01] shadow-[0_0_50px_rgba(184,134,11,0.25)]"
               style={{
-                background: "linear-gradient(135deg, rgba(74, 10, 10, 0.96) 0%, rgba(30, 5, 5, 0.99) 100%)",
                 borderColor: `${x.gold}60`
               }}
             >
@@ -275,44 +268,6 @@ export function TitleSlide({
                 defaultLabel="Shyam Express Poster"
                 defaultImage={slide0Poster}
               />
-              
-              {/* Poster Content layered perfectly on top with z-10 */}
-              <div className="relative z-10 flex flex-col justify-between h-full w-full p-6 bg-gradient-to-t from-black/90 via-black/40 to-black/60 pointer-events-none">
-                {/* Poster Top */}
-                <div className="text-center">
-                  <span className="text-[8px] tracking-[0.3em] text-[#FFD978] uppercase font-bold">A FILM BY PROZENIUS</span>
-                </div>
-
-                {/* Poster Title & Logo replication */}
-                <div className="text-center my-auto py-2">
-                  <h1 className="serif font-extrabold leading-none tracking-tight">
-                    <span className="block text-[32px] sm:text-[38px] text-transparent bg-clip-text bg-gradient-to-r from-[#FFD978] via-white to-[#FFD978] drop-shadow-[0_0_12px_rgba(255,217,120,0.6)] tracking-[0.08em] font-serif uppercase">
-                      shyam express
-                    </span>
-                    <span className="block text-[14px] sm:text-[16px] tracking-[0.25em] text-[#FFF8E7]/90 font-bold uppercase mt-1 drop-shadow-[0_0_8px_rgba(255,255,255,0.4)]">
-                      हारे का सहारा
-                    </span>
-                  </h1>
-                </div>
-
-                {/* Poster Cast Listing (the 5 faces requested by user) */}
-                <div className="relative z-10 bg-black/75 backdrop-blur-[2px] rounded-xl p-3 border border-white/5 mt-auto">
-                  <div className="text-[7.5px] tracking-[0.2em] text-white/40 uppercase font-extrabold text-center mb-1.5">STARRING ENSEMBLE</div>
-                  <div className="grid grid-cols-2 gap-1.5 text-left text-[8.5px]">
-                    <div className="text-[#FFF8E7]/90"><strong className="text-[#FFD978]">ANANYA</strong> <span className="text-white/40">- UPSC Dream</span></div>
-                    <div className="text-[#FFF8E7]/90"><strong className="text-[#FFD978]">MEHER</strong> <span className="text-white/40">- The Voice</span></div>
-                    <div className="text-[#FFF8E7]/90"><strong className="text-[#FFD978]">PROF S KHATU</strong> <span className="text-white/40">- The Sahara</span></div>
-                    <div className="text-[#FFF8E7]/90"><strong className="text-[#FFD978]">DR BANSAL</strong> <span className="text-white/40">- The System</span></div>
-                    <div className="text-[#FFF8E7]/90 col-span-2 text-center"><strong className="text-[#FFD978]">MR VERMA</strong> <span className="text-white/40">- The Hope</span></div>
-                  </div>
-                </div>
-
-                {/* Poster Bottom Taglines */}
-                <div className="text-center mt-3 pt-2 border-t border-white/5">
-                  <div className="text-[10px] text-[#FFF8E7] italic font-semibold tracking-wide">"A journey of faith, hope & second chances"</div>
-                  <div className="text-[9px] text-[#FFD978] font-bold tracking-[0.2em] uppercase mt-1">RELEASING SOON</div>
-                </div>
-              </div>
             </div>
           </div>
 

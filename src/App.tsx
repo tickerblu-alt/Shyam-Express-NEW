@@ -568,7 +568,39 @@ export default function App() {
             )}
           </button>
 
-
+          <button
+            onClick={() => {
+              if (isPlaying && audioState !== "off") {
+                setIsPlaying(false);
+                setAudioState("off");
+              } else {
+                setAudioState("song1");
+                setIsPlaying(true);
+                setVolume(0.15);
+              }
+            }}
+            className={`px-3 py-1.5 rounded-full text-[10px] uppercase font-bold tracking-wider transition-all flex items-center gap-1.5 cursor-pointer ${
+              isPlaying && audioState !== "off"
+                ? "bg-[#FFD978]/20 text-[#FFD978] border border-[#FFD978]/40 shadow-[0_0_12px_rgba(255,217,120,0.15)]"
+                : "bg-white/10 text-white/80 hover:bg-white/20 border border-white/5"
+            }`}
+            title={isPlaying && audioState !== "off" ? "Pause Background Music" : "Play Soulful Background Music"}
+          >
+            {isPlaying && audioState !== "off" ? (
+              <>
+                <Volume2 className="w-3.5 h-3.5 text-[#FFD978] animate-pulse" />
+                <span className="flex items-center gap-1">
+                  <span>Music ON</span>
+                  <span className="text-[8px] opacity-75 font-mono">(Vol: 15%)</span>
+                </span>
+              </>
+            ) : (
+              <>
+                <VolumeX className="w-3.5 h-3.5 text-white/50" />
+                <span>Music OFF</span>
+              </>
+            )}
+          </button>
 
           <button
             onClick={handleShare}
@@ -741,6 +773,9 @@ export default function App() {
               <button
                 onClick={() => {
                   setShowStartPopup(false);
+                  setIsPlaying(true);
+                  setAudioState("song1");
+                  setVolume(0.15); // minimized soulful level during opening
                 }}
                 className="mt-8 w-full h-[54px] rounded-full font-bold tracking-[0.16em] uppercase text-[12.5px] shadow-[0_8px_24px_rgba(184,134,11,0.25)] hover:shadow-[0_12px_32px_rgba(184,134,11,0.4)] hover:scale-[1.01] active:scale-[0.99] transition duration-300 flex items-center justify-center gap-2.5 cursor-pointer"
                 style={{ background: `linear-gradient(90deg, ${x.gold}, ${x.goldLight})`, color: "#1A1A1A" }}
