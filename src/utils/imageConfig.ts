@@ -90,13 +90,13 @@ export const IMAGES = {
 
   // Slide 2: The Opportunity (Devotee Footfall / Demographic Visual)
   slide2Image: getUrl(
-    "https://i.postimg.cc/MGNHGN1q/svf-fight-01-previs.webp", 
+    "https://i.postimg.cc/mhWzdqmt/shyam-express-final.png", 
     baseAssets.khatuShyamHero
   ),
 
   // Slide 3: Look & Feel - World A Realist Concept Plate (Gritty India)
   slide3WorldA: getUrl(
-    "https://i.postimg.cc/6pQC4s4f/shyam-express-panoramic-banner.webp", 
+    "https://i.postimg.cc/W16fTqqn/khatu-shyam-prof.jpg", 
     baseAssets.profShyam
   ),
 
@@ -161,14 +161,14 @@ export const IMAGES = {
   ),
 
   // --- MOVIE FRAMES SHOWCASE SLIDE ---
-  frame1: getUrl("https://i.postimg.cc/8PppTNx6/shyam-01-train-arrival.webp", baseAssets.khatuShyamHero),
-  frame2: getUrl("https://i.postimg.cc/cLj07YCC/nerf-05-final-render.webp", baseAssets.profShyam),
-  frame3: getUrl("https://i.postimg.cc/QC0rFKvg/nerf-03-virtual-production.webp", baseAssets.hemantNilimDas),
-  frame4: getUrl("https://i.postimg.cc/dtNYvd2t/nerf-01-capture.webp", baseAssets.sumedhMudgalkar),
+  frame1: getUrl("https://i.postimg.cc/W16fTqqn/khatu-shyam-prof.jpg", baseAssets.khatuShyamHero),
+  frame2: getUrl("https://i.postimg.cc/8PppTNx6/shyam-01-train-arrival.webp", baseAssets.profShyam),
+  frame3: getUrl("https://i.postimg.cc/cLj07YCC/nerf-05-final-render.webp", baseAssets.hemantNilimDas),
+  frame4: getUrl("https://i.postimg.cc/QC0rFKvg/nerf-03-virtual-production.webp", baseAssets.sumedhMudgalkar),
   frame5: getUrl("https://i.postimg.cc/vT3LCG6m/svf-01-photon-capture.webp", baseAssets.divyaDutta),
-  frame6: getUrl("https://i.postimg.cc/DwWdYkff/svf-02-prismatic.webp", baseAssets.prajaktaMali),
-  frame7: getUrl("https://i.postimg.cc/wB8Jf1bF/fight-nerf-01-previs.webp", baseAssets.hemantMentoring),
-  frame8: getUrl("https://i.postimg.cc/rpNdfQrB/fight-nerf-02-block.webp", baseAssets.shyamExpressLogo),
-  frame9: getUrl("", baseAssets.khatuShyamHero),
-  frame10: getUrl("", baseAssets.profShyam),
+  frame6: getUrl("https://i.postimg.cc/MGNHGN1q/svf-fight-01-previs.webp", baseAssets.prajaktaMali),
+  frame7: getUrl("https://i.postimg.cc/8cVCRvyX/svf-fight-02-block.webp", baseAssets.hemantMentoring),
+  frame8: getUrl("https://i.postimg.cc/K8sv9wqf/svf-fight-03-dodge.webp", baseAssets.shyamExpressLogo),
+  frame9: getUrl("https://i.postimg.cc/rpNdfQrB/fight-nerf-02-block.webp", baseAssets.khatuShyamHero),
+  frame10: getUrl("https://i.postimg.cc/5yhkNwm3/fight-nerf-03-dodge.webp", baseAssets.profShyam),
 };
