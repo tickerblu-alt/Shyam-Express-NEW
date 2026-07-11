@@ -84,7 +84,7 @@ export const IMAGES = {
 
   // Slide 1: One-Line Vision Atmospheric Visual (Mela/Devotees Atmosphere)
   slide1Image: getUrl(
-    "https://i.postimg.cc/K8sv9wqf/svf-fight-03-dodge.webp", 
+    "https://i.postimg.cc/mhWzdqmt/shyam-express-final.png", 
     baseAssets.khatuShyamHero
   ),
 
@@ -108,13 +108,13 @@ export const IMAGES = {
 
   // Slide 4: Character Blueprint - Prof Shyam Character Sheet / Portrait
   slide4Hero: getUrl(
-    "https://i.postimg.cc/6pQC4s4f/shyam-express-panoramic-banner.webp", 
+    "https://i.postimg.cc/mgZtpQTp/khatu-diffrent-versions.webp", 
     baseAssets.profShyam
   ),
 
   // Slide 5: All Star Cast Portrait 1 (Sumedh Mudgalkar)
   slide5Cast1: getUrl(
-    "https://i.postimg.cc/mgZtpQTp/khatu-diffrent-versions.webp", 
+    "https://i.postimg.cc/MKqk15Dw/sumedh.jpg", 
     baseAssets.sumedhMudgalkar
   ),
 
