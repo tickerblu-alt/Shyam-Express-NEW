@@ -39,7 +39,7 @@ const getUrl = (customUrl: string, fallbackAsset: string): string => {
 // Changing any link here will AUTOMATICALLY update that asset across ALL slides and movie frames!
 const baseAssets = {
   khatuShyamHero: getUrl(
-    "", 
+    "https://i.postimg.cc/RqrNbfpS/shyam-express-poster-9.webp", 
     localKhatuShyamHero
   ),
   sumedhMudgalkar: getUrl(
@@ -78,61 +78,61 @@ export const IMAGES = {
   
   // Slide 0: Title Slide Poster Image (Falls back to Khatu Shyam Hero)
   slide0Poster: getUrl(
-    "https://i.postimg.cc/7hQ0mf0K/HEMANT-DAS-MONTAGE.png", // Paste custom visual URL here if you want slide-specific override
+    "https://i.postimg.cc/RqrNbfpS/shyam-express-poster-9.webp", // Paste custom visual URL here if you want slide-specific override
     baseAssets.khatuShyamHero
   ),
 
   // Slide 1: One-Line Vision Atmospheric Visual (Mela/Devotees Atmosphere)
   slide1Image: getUrl(
-    "https://i.postimg.cc/7hQ0mf0K/HEMANT-DAS-MONTAGE.png", 
+    "https://i.postimg.cc/K8sv9wqf/svf-fight-03-dodge.webp", 
     baseAssets.khatuShyamHero
   ),
 
   // Slide 2: The Opportunity (Devotee Footfall / Demographic Visual)
   slide2Image: getUrl(
-    "https://i.postimg.cc/7hQ0mf0K/HEMANT-DAS-MONTAGE.png", 
+    "https://i.postimg.cc/MGNHGN1q/svf-fight-01-previs.webp", 
     baseAssets.khatuShyamHero
   ),
 
   // Slide 3: Look & Feel - World A Realist Concept Plate (Gritty India)
   slide3WorldA: getUrl(
-    "https://i.postimg.cc/7hQ0mf0K/HEMANT-DAS-MONTAGE.png", 
+    "https://i.postimg.cc/6pQC4s4f/shyam-express-panoramic-banner.webp", 
     baseAssets.profShyam
   ),
 
   // Slide 3: Look & Feel - World B Mythic Concept Plate (Darshan Symmetries)
   slide3WorldB: getUrl(
-    "https://i.postimg.cc/7hQ0mf0K/HEMANT-DAS-MONTAGE.png", 
+    "https://i.postimg.cc/9FbGfXMB/shyam-express-banner-2.webp", 
     baseAssets.khatuShyamHero
   ),
 
   // Slide 4: Character Blueprint - Prof Shyam Character Sheet / Portrait
   slide4Hero: getUrl(
-    "https://i.postimg.cc/7hQ0mf0K/HEMANT-DAS-MONTAGE.png", 
+    "https://i.postimg.cc/mgZtpQTp/khatu-diffrent-versions.webp", 
     baseAssets.profShyam
   ),
 
   // Slide 5: All Star Cast Portrait 1 (Sumedh Mudgalkar)
   slide5Cast1: getUrl(
-    "https://i.postimg.cc/7hQ0mf0K/HEMANT-DAS-MONTAGE.png", 
+    "https://i.postimg.cc/MKqk15Dw/sumedh.jpg", 
     baseAssets.sumedhMudgalkar
   ),
 
   // Slide 5: All Star Cast Portrait 2 (Divya Dutta / Prajakta Mali)
   slide5Cast2: getUrl(
-    "", 
+    "https://i.postimg.cc/GmgZwC10/Divya-Dutta-(2).png", 
     baseAssets.divyaDutta
   ),
 
   // Slide 5: All Star Cast Portrait 3 (Gajraj Rao / Raghubir Yadav)
   slide5Cast3: getUrl(
-    "", 
+    "https://i.postimg.cc/SR8MqqPL/Gajraj-Rao.jpg", 
     baseAssets.profShyam
   ),
 
   // Slide 5: All Star Cast Portrait 4 (Rajesh Sharma / Brijendra Kala)
   slide5Cast4: getUrl(
-    "", 
+    "https://i.postimg.cc/3xZ2d8ww/RAJESH-SHARMA.png", 
     baseAssets.hemantMentoring
   ),
 
@@ -144,27 +144,27 @@ export const IMAGES = {
 
   // Slide 7: Budget Model - Adaptive COP Visual Plate
   slide7BudgetVisual: getUrl(
-    "", 
+    "https://i.postimg.cc/MGNHGN1q/svf-fight-01-previs.webp", 
     baseAssets.shyamExpressLogo
   ),
 
   // Slide 8: Recovery & ROI - Distribution map / Infographic
   slide8Recovery: getUrl(
-    "", 
+    "https://i.postimg.cc/8cVCRvyX/svf-fight-02-block.webp", 
     baseAssets.shyamExpressLogo
   ),
 
   // Slide 9: Next Steps - Closing Visionary Concept
   slide9NextSteps: getUrl(
-    "", 
+    "https://i.postimg.cc/K8sv9wqf/svf-fight-03-dodge.webp", 
     baseAssets.khatuShyamHero
   ),
 
   // --- MOVIE FRAMES SHOWCASE SLIDE ---
-  frame1: getUrl("", baseAssets.khatuShyamHero),
-  frame2: getUrl("", baseAssets.profShyam),
-  frame3: getUrl("", baseAssets.hemantNilimDas),
-  frame4: getUrl("", baseAssets.sumedhMudgalkar),
+  frame1: getUrl("https://i.postimg.cc/8PppTNx6/shyam-01-train-arrival.webp", baseAssets.khatuShyamHero),
+  frame2: getUrl("https://i.postimg.cc/cLj07YCC/nerf-05-final-render.webp", baseAssets.profShyam),
+  frame3: getUrl("https://i.postimg.cc/QC0rFKvg/nerf-03-virtual-production.webp", baseAssets.hemantNilimDas),
+  frame4: getUrl("https://i.postimg.cc/dtNYvd2t/nerf-01-capture.webp", baseAssets.sumedhMudgalkar),
   frame5: getUrl("", baseAssets.divyaDutta),
   frame6: getUrl("", baseAssets.prajaktaMali),
   frame7: getUrl("", baseAssets.hemantMentoring),
