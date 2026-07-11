@@ -39,7 +39,7 @@ const getUrl = (customUrl: string, fallbackAsset: string): string => {
 export const IMAGES = {
   // --- BASE COMPONENT ASSETS ---
   khatuShyamHero: getUrl(
-    "https://i.postimg.cc/RqrNbfpS/shyam-express-poster-9.webp", 
+    "", 
     localKhatuShyamHero
   ),
   sumedhMudgalkar: getUrl(
@@ -59,11 +59,11 @@ export const IMAGES = {
     localProfShyam
   ),             
   hemantMentoring: getUrl(
-    "https://i.postimg.cc/7hQ0mf0K/HEMANT-DAS-MONTAGE.png", 
+    "", 
     localHemantMentoring
   ), 
   hemantNilimDas: getUrl(
-    "", 
+    "https://i.postimg.cc/7hQ0mf0K/HEMANT-DAS-MONTAGE.png", 
     localHemantNilimDas
   ),   
   shyamExpressLogo: getUrl(
