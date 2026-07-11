@@ -96,11 +96,11 @@ export const IMAGES = {
 
   // Slide 3: Look & Feel - World A Realist Concept Plate (Gritty India)
   slide3WorldA: getUrl(
-    "https://i.postimg.cc/mgZtpQTp/khatu-diffrent-versions.webp", 
+    "https://i.postimg.cc/6pQC4s4f/shyam-express-panoramic-banner.webp", 
     baseAssets.profShyam
   ),
 
-  // Slide 3: Look & Feel - World B Mythic Concept Plate (Darshan Symmetries)
+  // Slide 4: Look & Feel - World B Mythic Concept Plate (Darshan Symmetries)
   slide3WorldB: getUrl(
     "https://i.postimg.cc/9FbGfXMB/shyam-express-banner-2.webp", 
     baseAssets.khatuShyamHero
@@ -126,7 +126,7 @@ export const IMAGES = {
 
   // Slide 5: All Star Cast Portrait 3 (Gajraj Rao / Raghubir Yadav)
   slide5Cast3: getUrl(
-    "https://i.postimg.cc/SR8MqqPL/Gajraj-Rao.jpg", 
+    "https://i.postimg.cc/MKqk15Dw/sumedh.jpg", 
     baseAssets.profShyam
   ),
 
