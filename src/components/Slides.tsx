@@ -45,6 +45,21 @@ const hemantNilimDas = IMAGES.hemantNilimDas;
 const prajaktaMali = IMAGES.prajaktaMali;
 const shyamExpressLogo = IMAGES.shyamExpressLogo;
 
+const slide0Poster = IMAGES.slide0Poster;
+const slide1Image = IMAGES.slide1Image;
+const slide2Image = IMAGES.slide2Image;
+const slide3WorldA = IMAGES.slide3WorldA;
+const slide3WorldB = IMAGES.slide3WorldB;
+const slide4Hero = IMAGES.slide4Hero;
+const slide5Cast1 = IMAGES.slide5Cast1;
+const slide5Cast2 = IMAGES.slide5Cast2;
+const slide5Cast3 = IMAGES.slide5Cast3;
+const slide5Cast4 = IMAGES.slide5Cast4;
+const slide6CreatorPortrait = IMAGES.slide6CreatorPortrait;
+const slide7BudgetVisual = IMAGES.slide7BudgetVisual;
+const slide8Recovery = IMAGES.slide8Recovery;
+const slide9NextSteps = IMAGES.slide9NextSteps;
+
 // Constants
 export const x = {
   maroon: "#4A0A0A",
@@ -242,69 +257,62 @@ export function TitleSlide({
               <div className="text-[10.5px] text-white/80 tracking-wide mt-1.5 font-medium leading-snug">
                 Produced by <span className="text-white font-semibold">Ravinder Kumar</span> • Executive Producer <span className="text-white font-semibold">Bijendra Tusamad</span>
               </div>
-            </div>
-
-            <div 
-              className="relative group/poster w-full max-w-[380px] sm:max-w-[420px] aspect-[3/4] flex flex-col justify-between rounded-[24px] overflow-hidden border transition-transform duration-500 hover:scale-[1.01] shadow-[0_0_50px_rgba(184,134,11,0.25)] p-6"
+            </div>            <div 
+              className="relative group/poster w-full max-w-[380px] sm:max-w-[420px] aspect-[3/4] flex flex-col justify-between rounded-[24px] overflow-hidden border transition-transform duration-500 hover:scale-[1.01] shadow-[0_0_50px_rgba(184,134,11,0.25)]"
               style={{
                 background: "linear-gradient(135deg, rgba(74, 10, 10, 0.96) 0%, rgba(30, 5, 5, 0.99) 100%)",
                 borderColor: `${x.gold}60`
               }}
             >
-              {/* If user uploaded a custom poster image, display it. Otherwise show our ultra-premium poster replication! */}
-              {images?.slide_0_poster ? (
-                <img
-                  src={images.slide_0_poster}
-                  alt="Shyam Express Poster"
-                  referrerPolicy="no-referrer"
-                  className="absolute inset-0 w-full h-full object-cover z-0"
-                />
-              ) : (
-                <>
-                  {/* Glowing Halos & Background Artwork inside CSS Poster */}
-                  <div className="absolute inset-0 bg-cover bg-center opacity-25 z-0" style={{ backgroundImage: `url(${khatuShyamHero})` }} />
-                  <div className="absolute inset-x-0 top-0 h-[120px] bg-gradient-to-b from-[#B8860B]/20 to-transparent blur-[30px] pointer-events-none" />
-                  <div className="absolute inset-0 bg-gradient-to-b from-transparent via-black/40 to-black/90 z-1" />
+              <SlideImageZone
+                slotId="slide_0_poster"
+                images={images}
+                onUploadImage={onUploadImage}
+                onResetImage={onResetImage}
+                aspectClass="w-full h-full"
+                className="absolute inset-0 z-0"
+                showCaption={false}
+                defaultLabel="Shyam Express Poster"
+                defaultImage={slide0Poster}
+              />
+              
+              {/* Poster Content layered perfectly on top with z-10 */}
+              <div className="relative z-10 flex flex-col justify-between h-full w-full p-6 bg-gradient-to-t from-black/90 via-black/40 to-black/60 pointer-events-none">
+                {/* Poster Top */}
+                <div className="text-center">
+                  <span className="text-[8px] tracking-[0.3em] text-[#FFD978] uppercase font-bold">A FILM BY PROZENIUS</span>
+                </div>
 
-                  {/* Poster Content */}
-                  <div className="relative z-10 flex flex-col justify-between h-full w-full">
-                    {/* Poster Top */}
-                    <div className="text-center">
-                      <span className="text-[8px] tracking-[0.3em] text-[#FFD978] uppercase font-bold">A FILM BY PROZENIUS</span>
-                    </div>
+                {/* Poster Title & Logo replication */}
+                <div className="text-center my-auto py-2">
+                  <h1 className="serif font-extrabold leading-none tracking-tight">
+                    <span className="block text-[32px] sm:text-[38px] text-transparent bg-clip-text bg-gradient-to-r from-[#FFD978] via-white to-[#FFD978] drop-shadow-[0_0_12px_rgba(255,217,120,0.6)] tracking-[0.08em] font-serif uppercase">
+                      shyam express
+                    </span>
+                    <span className="block text-[14px] sm:text-[16px] tracking-[0.25em] text-[#FFF8E7]/90 font-bold uppercase mt-1 drop-shadow-[0_0_8px_rgba(255,255,255,0.4)]">
+                      हारे का सहारा
+                    </span>
+                  </h1>
+                </div>
 
-                    {/* Poster Title & Logo replication */}
-                    <div className="text-center my-auto py-2">
-                      <h1 className="serif font-extrabold leading-none tracking-tight">
-                        <span className="block text-[32px] sm:text-[38px] text-transparent bg-clip-text bg-gradient-to-r from-[#FFD978] via-white to-[#FFD978] drop-shadow-[0_0_12px_rgba(255,217,120,0.6)] tracking-[0.08em] font-serif uppercase">
-                          shyam express
-                        </span>
-                        <span className="block text-[14px] sm:text-[16px] tracking-[0.25em] text-[#FFF8E7]/90 font-bold uppercase mt-1 drop-shadow-[0_0_8px_rgba(255,255,255,0.4)]">
-                          हारे का सहारा
-                        </span>
-                      </h1>
-                    </div>
-
-                    {/* Poster Cast Listing (the 5 faces requested by user) */}
-                    <div className="relative z-10 bg-black/60 backdrop-blur-[2px] rounded-xl p-3 border border-white/5 mt-auto">
-                      <div className="text-[7.5px] tracking-[0.2em] text-white/40 uppercase font-extrabold text-center mb-1.5">STARRING ENSEMBLE</div>
-                      <div className="grid grid-cols-2 gap-1.5 text-left text-[8.5px]">
-                        <div className="text-[#FFF8E7]/90"><strong className="text-[#FFD978]">ANANYA</strong> <span className="text-white/40">- UPSC Dream</span></div>
-                        <div className="text-[#FFF8E7]/90"><strong className="text-[#FFD978]">MEHER</strong> <span className="text-white/40">- The Voice</span></div>
-                        <div className="text-[#FFF8E7]/90"><strong className="text-[#FFD978]">PROF S KHATU</strong> <span className="text-white/40">- The Sahara</span></div>
-                        <div className="text-[#FFF8E7]/90"><strong className="text-[#FFD978]">DR BANSAL</strong> <span className="text-white/40">- The System</span></div>
-                        <div className="text-[#FFF8E7]/90 col-span-2 text-center"><strong className="text-[#FFD978]">MR VERMA</strong> <span className="text-white/40">- The Hope</span></div>
-                      </div>
-                    </div>
-
-                    {/* Poster Bottom Taglines */}
-                    <div className="text-center mt-3 pt-2 border-t border-white/5">
-                      <div className="text-[10px] text-[#FFF8E7] italic font-semibold tracking-wide">"A journey of faith, hope & second chances"</div>
-                      <div className="text-[9px] text-[#FFD978] font-bold tracking-[0.2em] uppercase mt-1">RELEASING SOON</div>
-                    </div>
+                {/* Poster Cast Listing (the 5 faces requested by user) */}
+                <div className="relative z-10 bg-black/75 backdrop-blur-[2px] rounded-xl p-3 border border-white/5 mt-auto">
+                  <div className="text-[7.5px] tracking-[0.2em] text-white/40 uppercase font-extrabold text-center mb-1.5">STARRING ENSEMBLE</div>
+                  <div className="grid grid-cols-2 gap-1.5 text-left text-[8.5px]">
+                    <div className="text-[#FFF8E7]/90"><strong className="text-[#FFD978]">ANANYA</strong> <span className="text-white/40">- UPSC Dream</span></div>
+                    <div className="text-[#FFF8E7]/90"><strong className="text-[#FFD978]">MEHER</strong> <span className="text-white/40">- The Voice</span></div>
+                    <div className="text-[#FFF8E7]/90"><strong className="text-[#FFD978]">PROF S KHATU</strong> <span className="text-white/40">- The Sahara</span></div>
+                    <div className="text-[#FFF8E7]/90"><strong className="text-[#FFD978]">DR BANSAL</strong> <span className="text-white/40">- The System</span></div>
+                    <div className="text-[#FFF8E7]/90 col-span-2 text-center"><strong className="text-[#FFD978]">MR VERMA</strong> <span className="text-white/40">- The Hope</span></div>
                   </div>
-                </>
-              )}
+                </div>
+
+                {/* Poster Bottom Taglines */}
+                <div className="text-center mt-3 pt-2 border-t border-white/5">
+                  <div className="text-[10px] text-[#FFF8E7] italic font-semibold tracking-wide">"A journey of faith, hope & second chances"</div>
+                  <div className="text-[9px] text-[#FFD978] font-bold tracking-[0.2em] uppercase mt-1">RELEASING SOON</div>
+                </div>
+              </div>
             </div>
           </div>
 
@@ -509,6 +517,7 @@ export function OneLinerSlide({ images, onUploadImage, onResetImage }: SlideProp
                 onResetImage={onResetImage}
                 aspectClass="aspect-[16/7.5]"
                 defaultLabel="Atmospheric concept visual (e.g., Mela, Devotees, Sunset atmosphere)"
+                defaultImage={slide1Image}
               />
             </div>
           </div>
@@ -605,6 +614,7 @@ export function OpportunitySlide({ images, onUploadImage, onResetImage }: SlideP
                 onResetImage={onResetImage}
                 aspectClass="aspect-[16/6.5]"
                 defaultLabel="Audience Demographic / Temple Devotee Atmosphere Plate"
+                defaultImage={slide2Image}
               />
             </div>
           </div>
@@ -693,6 +703,7 @@ export function LookFeelSlide({ images, onUploadImage, onResetImage }: SlideProp
                   onResetImage={onResetImage}
                   aspectClass="aspect-[16/6]"
                   defaultLabel="World A Realist Concept Plate"
+                  defaultImage={slide3WorldA}
                 />
               </div>
             </div>
@@ -752,6 +763,7 @@ export function LookFeelSlide({ images, onUploadImage, onResetImage }: SlideProp
                   onResetImage={onResetImage}
                   aspectClass="aspect-[16/6]"
                   defaultLabel="World B Mythic Concept Plate"
+                  defaultImage={slide3WorldB}
                 />
               </div>
             </div>
@@ -804,6 +816,7 @@ export function ProfShyamSlide({ images, onUploadImage, onResetImage }: SlidePro
               onResetImage={onResetImage}
               aspectClass="aspect-[4/3]"
               defaultLabel="Prof S Khatu Character Sheet"
+              defaultImage={slide4Hero}
             />
             
             <div className="mt-4 p-3 rounded-xl bg-black/40 border border-white/5 text-center">
@@ -866,28 +879,28 @@ export function CastSlide({ images, onUploadImage, onResetImage }: SlideProps) {
       name: "Sumedh Mudgalkar",
       note: "Raw middle-class struggle, everyday anger mixed with soft vulnerability and divine devotion.",
       icon: <Users className="w-4 h-4" />,
-      defaultImg: sumedhMudgalkar
+      defaultImg: slide5Cast1
     },
     {
       role: "Dadi & Maternal Pillars",
       name: "DIVYA DUTTA / PRAJAKTA MALI",
       note: "Unshakeable cultural anchor, carrying deep faith without any melodrama.",
       icon: <Award className="w-4 h-4 text-amber-500" />,
-      defaultImg: divyaDutta
+      defaultImg: slide5Cast2
     },
     {
       role: "The Presence",
       name: "Gajraj Rao / Raghubir Yadav",
       note: "Divine voiceover, majestic silhouettes, and high-impact cameo roles.",
       icon: <Sparkles className="w-4 h-4 text-amber-400" />,
-      defaultImg: profShyam
+      defaultImg: slide5Cast3
     },
     {
       role: "The Mentor • 58",
       name: "Rajesh Sharma / Brijendra Kala",
       note: "Skeptical coaching institution owner with a golden heart.",
       icon: <CheckCircle className="w-4 h-4" />,
-      defaultImg: hemantMentoring
+      defaultImg: slide5Cast4
     }
   ];
 
@@ -1061,6 +1074,7 @@ export function COPSlide({ images, onUploadImage, onResetImage }: SlideProps) {
                 aspectClass="aspect-[16/6]"
                 showCaption={false}
                 defaultLabel="Budget Visual Plate"
+                defaultImage={slide7BudgetVisual}
               />
             </div>
           </div>
@@ -1271,6 +1285,7 @@ export function RecoverySlide({ images, onUploadImage, onResetImage }: SlideProp
                 aspectClass="aspect-[16/5.5]"
                 showCaption={false}
                 defaultLabel="Distribution Map / ROI Infographic Visual"
+                defaultImage={slide8Recovery}
               />
             </div>
           </div>
@@ -1354,6 +1369,7 @@ export function NextStepsSlide({ onCTAClick, images, onUploadImage, onResetImage
               aspectClass="aspect-[16/5]"
               showCaption={false}
               defaultLabel="Closing Visionary Concept Visual"
+              defaultImage={slide9NextSteps}
             />
           </div>
         </div>
@@ -1488,7 +1504,7 @@ export function AboutCreatorSlide({ images, onUploadImage, onResetImage }: Slide
               aspectClass="aspect-[1.5/1] md:aspect-[3/4]"
               className="max-w-[280px] md:max-w-none mx-auto w-full"
               defaultLabel="Creator Portrait"
-              defaultImage={hemantMentoring}
+              defaultImage={slide6CreatorPortrait}
             />
             <div className="p-3.5 rounded-xl bg-black/40 border border-white/5">
               <div className="text-[10px] font-mono tracking-wider uppercase text-[#FFD978] font-bold">
@@ -1595,14 +1611,16 @@ interface ProductionFramesSlideProps {
 }
 
 const DEFAULT_FRAMES: Record<string, string> = {
-  "movie_frame_1": khatuShyamHero,
-  "movie_frame_2": profShyam,
-  "movie_frame_3": hemantNilimDas,
-  "movie_frame_4": sumedhMudgalkar,
-  "movie_frame_5": divyaDutta,
-  "movie_frame_6": prajaktaMali,
-  "movie_frame_7": hemantMentoring,
-  "movie_frame_8": shyamExpressLogo,
+  "movie_frame_1": IMAGES.frame1,
+  "movie_frame_2": IMAGES.frame2,
+  "movie_frame_3": IMAGES.frame3,
+  "movie_frame_4": IMAGES.frame4,
+  "movie_frame_5": IMAGES.frame5,
+  "movie_frame_6": IMAGES.frame6,
+  "movie_frame_7": IMAGES.frame7,
+  "movie_frame_8": IMAGES.frame8,
+  "movie_frame_9": IMAGES.frame9,
+  "movie_frame_10": IMAGES.frame10,
 };
 
 export function ProductionFramesSlide({ frames = {}, onUploadFrame, onDeleteFrame }: ProductionFramesSlideProps) {
