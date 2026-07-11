@@ -43,23 +43,23 @@ export const IMAGES = {
     localKhatuShyamHero
   ),
   sumedhMudgalkar: getUrl(
-    "", 
+    "https://i.postimg.cc/7hQ0mf0K/HEMANT-DAS-MONTAGE.png", 
     localSumedhMudgalkar
   ), 
   divyaDutta: getUrl(
-    "", 
+    "https://i.postimg.cc/7hQ0mf0K/HEMANT-DAS-MONTAGE.png", 
     localDivyaDutta
   ),           
   prajaktaMali: getUrl(
-    "", 
+    "https://i.postimg.cc/7hQ0mf0K/HEMANT-DAS-MONTAGE.png", 
     localPrajaktaMali
   ),       
   profShyam: getUrl(
-    "", 
+    "https://i.postimg.cc/7hQ0mf0K/HEMANT-DAS-MONTAGE.png", 
     localProfShyam
   ),             
   hemantMentoring: getUrl(
-    "", 
+    "https://i.postimg.cc/7hQ0mf0K/HEMANT-DAS-MONTAGE.png", 
     localHemantMentoring
   ), 
   hemantNilimDas: getUrl(
@@ -67,7 +67,7 @@ export const IMAGES = {
     localHemantNilimDas
   ),   
   shyamExpressLogo: getUrl(
-    "", 
+    "https://i.postimg.cc/7hQ0mf0K/HEMANT-DAS-MONTAGE.png", 
     localShyamExpressLogo
   ),
 
@@ -75,13 +75,13 @@ export const IMAGES = {
   
   // Slide 0: Title Slide Poster Image
   slide0Poster: getUrl(
-    "", // Paste your custom poster image URL here (e.g. "https://i.postimg.cc/...")
+    "", // https://i.postimg.cc/7hQ0mf0K/HEMANT-DAS-MONTAGE.png (e.g. "https://i.postimg.cc/...")
     localKhatuShyamHero
   ),
 
   // Slide 1: One-Line Vision Atmospheric Visual (Mela/Devotees Atmosphere)
   slide1Image: getUrl(
-    "", // Paste custom visual URL here
+    "", // https://i.postimg.cc/7hQ0mf0K/HEMANT-DAS-MONTAGE.png
     localKhatuShyamHero
   ),
 
