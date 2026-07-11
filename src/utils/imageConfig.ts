@@ -90,7 +90,7 @@ export const IMAGES = {
 
   // Slide 2: The Opportunity (Devotee Footfall / Demographic Visual)
   slide2Image: getUrl(
-    "https://i.postimg.cc/mhWzdqmt/shyam-express-final.png", 
+    "https://i.postimg.cc/W16fTqqn/khatu-shyam-prof.jpg", 
     baseAssets.khatuShyamHero
   ),
 
