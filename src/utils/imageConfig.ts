@@ -108,7 +108,7 @@ export const IMAGES = {
 
   // Slide 4: Character Blueprint - Prof Shyam Character Sheet / Portrait
   slide4Hero: getUrl(
-    "https://i.postimg.cc/mgZtpQTp/khatu-diffrent-versions.webp", 
+    "https://i.postimg.cc/6pQC4s4f/shyam-express-panoramic-banner.webp", 
     baseAssets.profShyam
   ),
 
