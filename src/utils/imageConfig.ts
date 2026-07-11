@@ -126,7 +126,7 @@ export const IMAGES = {
 
   // Slide 5: All Star Cast Portrait 3 (Gajraj Rao / Raghubir Yadav)
   slide5Cast3: getUrl(
-    "https://i.postimg.cc/MKqk15Dw/sumedh.jpg", 
+    "https://i.postimg.cc/SR8MqqPL/Gajraj-Rao.jpg, 
     baseAssets.profShyam
   ),
 
