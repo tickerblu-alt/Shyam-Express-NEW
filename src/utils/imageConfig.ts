@@ -78,43 +78,43 @@ export const IMAGES = {
   
   // Slide 0: Title Slide Poster Image (Falls back to Khatu Shyam Hero)
   slide0Poster: getUrl(
-    "", // Paste custom visual URL here if you want slide-specific override
+    "https://i.postimg.cc/7hQ0mf0K/HEMANT-DAS-MONTAGE.png", // Paste custom visual URL here if you want slide-specific override
     baseAssets.khatuShyamHero
   ),
 
   // Slide 1: One-Line Vision Atmospheric Visual (Mela/Devotees Atmosphere)
   slide1Image: getUrl(
-    "", 
+    "https://i.postimg.cc/7hQ0mf0K/HEMANT-DAS-MONTAGE.png", 
     baseAssets.khatuShyamHero
   ),
 
   // Slide 2: The Opportunity (Devotee Footfall / Demographic Visual)
   slide2Image: getUrl(
-    "", 
+    "https://i.postimg.cc/7hQ0mf0K/HEMANT-DAS-MONTAGE.png", 
     baseAssets.khatuShyamHero
   ),
 
   // Slide 3: Look & Feel - World A Realist Concept Plate (Gritty India)
   slide3WorldA: getUrl(
-    "", 
+    "https://i.postimg.cc/7hQ0mf0K/HEMANT-DAS-MONTAGE.png", 
     baseAssets.profShyam
   ),
 
   // Slide 3: Look & Feel - World B Mythic Concept Plate (Darshan Symmetries)
   slide3WorldB: getUrl(
-    "", 
+    "https://i.postimg.cc/7hQ0mf0K/HEMANT-DAS-MONTAGE.png", 
     baseAssets.khatuShyamHero
   ),
 
   // Slide 4: Character Blueprint - Prof Shyam Character Sheet / Portrait
   slide4Hero: getUrl(
-    "", 
+    "https://i.postimg.cc/7hQ0mf0K/HEMANT-DAS-MONTAGE.png", 
     baseAssets.profShyam
   ),
 
   // Slide 5: All Star Cast Portrait 1 (Sumedh Mudgalkar)
   slide5Cast1: getUrl(
-    "", 
+    "https://i.postimg.cc/7hQ0mf0K/HEMANT-DAS-MONTAGE.png", 
     baseAssets.sumedhMudgalkar
   ),
 
