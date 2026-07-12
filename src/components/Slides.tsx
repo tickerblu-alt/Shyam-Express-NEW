@@ -297,7 +297,7 @@ export function TitleSlide({
                 </div>
                 <ul className="space-y-2 text-[12.5px] text-white/70 leading-relaxed font-sans pl-1">
                   <li>
-                    <strong className="text-white">Unprecedented Socio-Cultural Resonance:</strong> Melds highly realistic coaching-mafia drama (reminiscent of 12th Fail) with the massive, visceral faith-driven emotional current of 10 Crore+ Khatu Shyam devotees.
+                    <strong className="text-white">Unprecedented Socio-Cultural Resonance:</strong> Melds a realistic, highly grounded systemic and institutional struggle (reminiscent of 12th Fail) with the massive, visceral faith-driven emotional current of 10 Crore+ Khatu Shyam devotees.
                   </li>
                   <li>
                     <strong className="text-white">Highly Relatable Protagonist Journey:</strong> A deeply human story where a declared "systemic failure" succeeds not through supernatural miracles, but through the sheer, unshakeable cultural resilience inspired by Khatu Shyam.
@@ -352,7 +352,7 @@ export function OneLinerSlide({ images, onUploadImage, onResetImage }: SlideProp
   const pillars = [
     {
       t: "Systemic defeat vs personal worth",
-      d: "Coaching mafia, algorithmic shortlisting, viral shame. The system is designed to declare him useless.",
+      d: "Institutional barriers, automated screening, and public pressures. The modern system is designed to declare him obsolete.",
       icon: <Scale className="w-5 h-5" />
     },
     {
@@ -398,7 +398,7 @@ export function OneLinerSlide({ images, onUploadImage, onResetImage }: SlideProp
                 Logline • 28 Words
               </div>
               <p className="serif text-[18px] md:text-[20px] leading-relaxed text-[#1A1A1A] italic">
-                "A failed government aspirant, shamed in a viral video, must prove his worth in 7 days before his family land is seized, guided only by his Dadi's unwavering conviction that Haar Ka Sahara still answers."
+                "A striving aspirant, facing sudden public trials and systemic exclusion, must redeem his purpose and protect his family's legacy in a limited window, guided by an elder's unshakeable conviction that the ultimate refuge of the defeated always answers."
               </p>
               
               <div className="mt-5 flex flex-wrap gap-2">
@@ -644,7 +644,7 @@ export function LookFeelSlide({ images, onUploadImage, onResetImage }: SlideProp
                 Gritty handheld cameras, desaturated shadows, fluorescent glare, and dusty crowded lanes.
               </h3>
               <ul className="mt-4 space-y-2 text-[12.5px] leading-relaxed text-black/75">
-                <li>• <strong className="font-semibold">Format:</strong> Realism, 35mm handheld, natural light, shallow depth. Filmed in actual coaching zones, bus stations, and village layouts.</li>
+                <li>• <strong className="font-semibold">Format:</strong> Realism, 35mm handheld, natural light, shallow depth. Filmed in actual institutional hubs, transit centers, and village layouts.</li>
                 <li>• <strong className="font-semibold">Palette:</strong> Dust grey, faded denim blue, sodium yellow, rust.</li>
                 <li>• <strong className="font-semibold">Soundscape:</strong> Local traffic roar, background hum, clicking pens, rustling exam papers. No bhajan until the third act.</li>
               </ul>
@@ -853,7 +853,7 @@ export function CastSlide({ images, onUploadImage, onResetImage }: SlideProps) {
     {
       role: "The Mentor • 58",
       name: "Rajesh Sharma / Brijendra Kala",
-      note: "Skeptical coaching institution owner with a golden heart.",
+      note: "Skeptical academy administrator with an unexpected golden heart.",
       icon: <CheckCircle className="w-4 h-4" />,
       defaultImg: slide5Cast4
     }
