@@ -26,7 +26,6 @@ import {
   TitleSlide,
   OneLinerSlide,
   OpportunitySlide,
-  StorylineSlide,
   LookFeelSlide,
   ProfShyamSlide,
   CastSlide,
@@ -48,12 +47,11 @@ const filmTrack2Url = filmTrack1Url;
 import { IMAGES } from "./utils/imageConfig";
 const fallbackHero = IMAGES.khatuShyamHero;
 
-const TOTAL_SLIDES = 12;
+const TOTAL_SLIDES = 11;
 const SLIDE_NAMES = [
   "Pitch Deck Title",
   "One-Line Vision",
   "The Opportunity",
-  "Detailed Storyline",
   "Look & Feel",
   "Character Blueprint",
   "All-Star Cast",
@@ -474,22 +472,20 @@ export default function App() {
       case 2:
         return <OpportunitySlide {...commonProps} />;
       case 3:
-        return <StorylineSlide {...commonProps} />;
-      case 4:
         return <LookFeelSlide {...commonProps} />;
-      case 5:
+      case 4:
         return <ProfShyamSlide {...commonProps} />;
-      case 6:
+      case 5:
         return <CastSlide {...commonProps} />;
-      case 7:
+      case 6:
         return <AboutCreatorSlide {...commonProps} />;
-      case 8:
+      case 7:
         return <COPSlide {...commonProps} />;
-      case 9:
+      case 8:
         return <RecoverySlide {...commonProps} />;
-      case 10:
+      case 9:
         return <NextStepsSlide onCTAClick={handleCTA} {...commonProps} />;
-      case 11:
+      case 10:
         return (
           <ProductionFramesSlide
             frames={movieFrames}
